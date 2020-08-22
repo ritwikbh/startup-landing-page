@@ -1,0 +1,58 @@
+/*Some default implementation. Good to have*/
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  /*https://css-tricks.com/perfect-full-page-background-image*/
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+	font-size: 3rem;
+	color: #e2dbdb;
+}
+
+/*The is the little orange line above the button*/
+hr {
+	border-color: #F05F44;
+	border-width: 3px;
+	/*limit the width to not take the whole page*/
+	max-width: 65px;
+}
+
+.buffer{
+	/*give buffer some height to put some distance bw title and button*/
+	height: 10rem;
+}
+
+.btn {
+	/*100 to 900*/
+	font-weight: 700;
+	/*to round the  button*/
+	border-radius: 300px;
+	/*can use bootstrap uppercase class as well for this*/
+	text-transform: uppercase;
+}
+
+.btn-primary{
+	background-color: #F05F44;
+	/*border still is default bootstrap,
+	so we need to override it too*/
+	border-color: #F05F44;
+}
+
+.btn-primary:hover{
+	background-color: #ee4b08;
+	border-color: #ee4b08;
+	border-width: 4px;
+}
+
+.btn-xl {
+	/*make the button bigger*/
+	padding: 1rem 2rem;
+}
